@@ -1,17 +1,28 @@
-# Ambati Homes — Final Static Site Source
+# Ambati Homes — RRR IKON Premium Website Source
 
-This is a clean static GitHub Pages site for Ambati Homes & Developers Pvt Ltd.
-
-## What changed
-- No screenshots/mockups are used as website content.
-- The homepage uses the supplied RRR IKON elevation as the hero image.
-- The project gallery uses separate RRR IKON elevation images.
-- The supplied Ambati Homes brand presentation is used to create the logo asset.
-- RRR IKON brochure is linked as a separate PDF asset.
-- Responsive layout for desktop/mobile.
-
-## Upload to GitHub Pages
-Upload the contents of this folder to the repository root so `index.html` is at the root. Keep the `assets` folder alongside it.
+This package updates the existing Ambati Homes static site to match the supplied premium reference design:
+- cream + forest-green + gold visual system
+- larger Ambati Homes header logo
+- RRR IKON hero with project-first messaging
+- amenity icon strip
+- project overview / floor-plan style panel / area statement
+- gallery layout
+- About, Values and Contact sections
+- responsive mobile layout
 
 ## Important
-The logo image is cropped from the brand presentation supplied in this project. If you later have the original transparent/high-resolution logo file, replace `assets/ambati-homes-logo.jpg` without changing the HTML.
+This source expects the existing repository assets to remain in:
+
+`assets/`
+
+In particular:
+- `assets/ambati-homes-logo.jpg`
+- `assets/rrr-ikon-elevation-01.jpeg`
+- `assets/rrr-ikon-elevation-02.jpeg`
+- `assets/rrr-ikon-elevation-03.jpeg`
+- `assets/rrr-ikon-night.jpeg`
+- `assets/rrr-ikon-brochure.pdf`
+
+Replace the repository's `index.html` and `styles.css` with the files in this package. Keep the existing `assets/` folder.
+
+The floor-plan graphic is intentionally CSS-built as a visual panel rather than copying the supplied screenshot into the website. The detailed plan remains available through the brochure link.
