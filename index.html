@@ -1,264 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Ambati Homes | RRR IKON</title>
-  <meta name="description" content="RRR IKON — 2 BHK Luxury Apartment Flats in Kavali, Nellore District, Andhra Pradesh." />
+  <meta name="description" content="Ambati Homes — RRR IKON 2 BHK luxury apartments in Kavali, Nellore District, Andhra Pradesh.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --cream:#f7f1e3;
-      --cream2:#fffaf0;
-      --green:#073f31;
-      --green2:#0c5944;
-      --gold:#a87520;
-      --gold2:#c7963c;
-      --ink:#24312d;
-      --line:#d9cdb6;
-      --white:#fffdf7;
-      --shadow:0 18px 50px rgba(45,35,17,.12);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:var(--cream2);color:var(--ink);font-family:"DM Sans",sans-serif}
-    a{text-decoration:none;color:inherit}
-    img{display:block;max-width:100%}
-    .container{width:min(1380px,92%);margin:auto}
-
-    /* Header */
-    header{
-      position:sticky;top:0;z-index:50;background:rgba(255,250,240,.94);
-      backdrop-filter:blur(12px);border-bottom:1px solid rgba(168,117,32,.14)
-    }
-    .nav{height:92px;display:flex;align-items:center;justify-content:space-between;gap:30px}
-    .brand{display:flex;align-items:center;gap:12px;min-width:280px}
-    .brand-mark{
-      width:70px;height:70px;border:2px solid var(--gold);border-radius:50%;
-      display:grid;place-items:center;color:var(--gold);font-family:"Cormorant Garamond",serif;
-      font-size:24px;font-weight:700;position:relative
-    }
-    .brand-mark:after{content:"";position:absolute;inset:6px;border:1px solid var(--gold);border-radius:50%}
-    .brand-title{font-family:"Cormorant Garamond",serif;font-size:30px;letter-spacing:1px;color:var(--gold);line-height:.8}
-    .brand-title span{display:block;color:var(--green);font-family:"DM Sans";font-size:12px;letter-spacing:5px;margin-top:8px}
-    nav{display:flex;gap:38px;align-items:center;font-size:15px;font-weight:500}
-    nav a{padding:34px 0 29px;border-bottom:2px solid transparent}
-    nav a:hover,nav a.active{color:var(--gold);border-color:var(--gold)}
-    .touch{background:var(--green);color:white;padding:16px 28px;border-radius:999px;font-weight:600;white-space:nowrap}
-    .touch:hover{background:var(--green2)}
-
-    /* Hero */
-    .hero{position:relative;overflow:hidden;background:var(--cream);min-height:650px}
-    .hero-grid{display:grid;grid-template-columns:43% 57%;min-height:650px}
-    .hero-copy{padding:78px 30px 70px 7%;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
-    .eyebrow{letter-spacing:5px;font-size:14px;font-weight:600;color:#4c514a;margin-bottom:10px}
-    h1{font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:92px;line-height:.82;margin:0 0 10px;font-weight:700}
-    .sub{font-size:20px;letter-spacing:4px;color:var(--green);font-weight:600;margin-bottom:10px}
-    .location{font-size:16px;margin-bottom:20px}
-    .location b{color:var(--gold);font-size:20px;margin-right:8px}
-    .royal{font-family:"Cormorant Garamond",serif;font-size:34px;font-style:italic;color:var(--gold);margin:0 0 7px}
-    .gold-line{width:34px;height:2px;background:var(--gold);margin-bottom:12px}
-    .description{max-width:500px;line-height:1.65;color:#555b56;margin:0 0 26px}
-    .actions{display:flex;gap:14px;flex-wrap:wrap}
-    .btn{padding:16px 25px;border-radius:999px;font-weight:600;border:1px solid var(--gold);display:inline-flex;align-items:center;gap:10px}
-    .btn-primary{background:var(--gold);color:white}
-    .btn-outline{color:#765316;background:rgba(255,255,255,.35)}
-    .hero-photo{position:relative;min-height:650px;overflow:hidden}
-    .hero-photo img{width:100%;height:100%;object-fit:cover}
-    .hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--cream) 0%,rgba(247,241,227,.1) 16%,transparent 45%)}
-    .script{position:absolute;right:7%;top:18%;z-index:3;color:#a87520;font-family:"Great Vibes",cursive;font-size:48px;line-height:1.05;max-width:300px;text-align:center;transform:rotate(-5deg)}
-    .script:after{content:"";display:block;width:80px;height:2px;background:var(--gold);margin:14px auto}
-
-    /* Feature strip */
-    .features{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .feature-grid{display:grid;grid-template-columns:repeat(8,1fr)}
-    .feature{min-height:115px;padding:18px 10px;text-align:center;border-right:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px}
-    .feature:last-child{border-right:0}
-    .icon{font-size:29px;color:var(--gold);line-height:1}
-    .feature strong{font-size:13px;font-weight:500;line-height:1.25}
-
-    /* Overview */
-    section{padding:70px 0}
-    .section-grid{display:grid;grid-template-columns:1.05fr 1fr 1.15fr;gap:35px;align-items:start}
-    .section-title{font-family:"Cormorant Garamond",serif;color:var(--green);font-size:42px;line-height:.95;margin:7px 0 14px}
-    .kicker{font-size:12px;letter-spacing:4px;color:#50554f}
-    .kicker:before{content:"";display:inline-block;width:25px;height:2px;background:var(--gold);vertical-align:middle;margin-right:10px}
-    .overview p{line-height:1.65;color:#5d625e}
-    .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0}
-    .fact strong{display:block;color:var(--gold);font-size:13px;margin-bottom:3px}
-    .fact span{font-size:12px;line-height:1.3}
-    .whatsapp{display:inline-flex;background:var(--green);color:#fff;padding:15px 23px;border-radius:999px;font-weight:600}
-    .floor{border-left:1px solid var(--line);padding-left:28px}
-    .floor img{height:330px;width:100%;object-fit:contain;background:#f0eadb;border-radius:10px}
-    .area{margin-top:15px;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-    .area h4{margin:0;padding:10px;background:var(--green);color:white;font-size:14px}
-    table{width:100%;border-collapse:collapse;font-size:13px}
-    td{padding:8px;border-bottom:1px solid var(--line);text-align:center}
-    .highlights{margin-top:16px}
-    .highlights h4{margin:0 0 10px;color:var(--green)}
-    .highlights div{font-size:13px;margin:7px 0}
-    .highlights div:before{content:"✓";display:inline-grid;place-items:center;background:var(--gold);color:white;width:18px;height:18px;border-radius:50%;font-size:11px;margin-right:8px}
-
-    /* Gallery */
-    .gallery-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:20px}
-    .gallery-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:190px;gap:12px}
-    .gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:9px}
-    .gallery-grid .big{grid-row:span 2}
-    .view-all{color:var(--gold);font-weight:600}
-
-    footer{background:var(--green);color:white;padding:42px 0}
-    .footer-row{display:flex;justify-content:space-between;gap:30px;align-items:center}
-    footer .brand-title{color:#e0b35e} footer .brand-title span{color:#fff}
-    .copyright{font-size:13px;opacity:.8}
-
-    @media(max-width:1100px){
-      nav{gap:18px}.brand{min-width:auto}.brand-title{font-size:24px}
-      .feature-grid{grid-template-columns:repeat(4,1fr)}
-      .feature:nth-child(4){border-right:0}
-      .feature:nth-child(-n+4){border-bottom:1px solid var(--line)}
-      .section-grid{grid-template-columns:1fr 1fr}
-      .overview{grid-column:span 2}
-    }
-    @media(max-width:800px){
-      header{position:relative}.nav{height:auto;padding:15px 0;flex-wrap:wrap}
-      nav{order:3;width:100%;overflow-x:auto;gap:25px}
-      nav a{padding:8px 0}
-      .touch{padding:12px 18px}
-      .brand-mark{width:54px;height:54px}.brand-title{font-size:21px}
-      .hero-grid{grid-template-columns:1fr;min-height:0}
-      .hero-copy{padding:55px 7% 35px}
-      h1{font-size:68px}
-      .hero-photo{min-height:430px}.script{top:8%;right:5%;font-size:36px}
-      .feature-grid{grid-template-columns:repeat(2,1fr)}
-      .feature:nth-child(2n){border-right:0}
-      .feature:nth-child(n){border-bottom:1px solid var(--line)}
-      .section-grid{grid-template-columns:1fr}
-      .overview{grid-column:auto}
-      .floor{border-left:0;border-top:1px solid var(--line);padding:30px 0 0}
-      .gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:160px}
-      .gallery-grid .big{grid-column:span 2;grid-row:span 2}
-      .footer-row{flex-direction:column;align-items:flex-start}
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-  <div class="container nav">
-    <a class="brand" href="#home" aria-label="Ambati Homes">
-      <div class="brand-mark">AH</div>
-      <div class="brand-title">AMBATI <small>HOMES</small><span>BUILDING SPACES FOR BETTER LIVING</span></div>
-    </a>
-    <nav>
-      <a class="active" href="#home">Home</a>
-      <a href="#about">About Us</a>
-      <a href="#projects">Projects</a>
-      <a href="#values">Our Values</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="touch" href="https://wa.me/919999999999" target="_blank" rel="noopener">◉ &nbsp; Get in Touch</a>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo-wrap" href="#home" aria-label="Ambati Homes home">
+        <img src="assets/ambati-homes-logo.jpg" alt="Ambati Homes logo">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#project">Projects</a>
+        <a href="#values">Our Values</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="#contact"><span>◉</span> Get in Touch</a>
+    </div>
+  </header>
 
-<main id="home">
-  <section class="hero">
-    <div class="hero-grid">
+  <main id="home">
+    <section class="hero">
       <div class="hero-copy">
-        <div class="eyebrow">OUR FIRST PROJECT</div>
-        <h1>RRR IKON</h1>
-        <div class="sub">2 BHK LUXURY APARTMENT FLATS</div>
-        <div class="location"><b>●</b> Kavali &nbsp;|&nbsp; Nellore District &nbsp;|&nbsp; Andhra Pradesh</div>
-        <div class="royal">A Royal Way of Life</div>
-        <div class="gold-line"></div>
-        <p class="description">Thoughtfully designed 2 BHK homes with modern elevations, premium finishes and all the comforts your family deserves.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#projects">View Project Details →</a>
-          <a class="btn btn-outline" href="assets/rrr-ikon-brochure.pdf" download>⇩ &nbsp; Download Brochure</a>
+        <div class="container hero-copy-inner">
+          <p class="eyebrow">OUR FIRST PROJECT</p>
+          <h1>RRR IKON</h1>
+          <p class="hero-sub">2 BHK LUXURY APARTMENT FLATS</p>
+          <p class="location"><span>⌖</span> Kavali <i></i> Nellore District <i></i> Andhra Pradesh</p>
+          <p class="script">A Royal Way of Life</p>
+          <span class="gold-rule"></span>
+          <p class="hero-text">Thoughtfully designed 2 BHK homes with modern elevations, premium finishes and all the comforts your family deserves.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#project">View Project Details <b>→</b></a>
+            <a class="btn btn-outline" href="assets/rrr-ikon-brochure.pdf" target="_blank" rel="noopener">⇩ &nbsp; Download Brochure</a>
+          </div>
         </div>
       </div>
-      <div class="hero-photo">
-        <img src="assets/rrr-ikon-elevation-01.jpeg" alt="RRR IKON luxury apartment" />
-        <div class="script">Modern Homes<br>Brighter Tomorrows</div>
+      <div class="hero-image">
+        <img src="assets/rrr-ikon-elevation-01.jpeg" alt="RRR IKON apartment elevation" fetchpriority="high">
+        <div class="hero-message">Modern Homes<br><span>Brighter Tomorrows</span><small></small></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="features" id="values">
-    <div class="container feature-grid">
-      <div class="feature"><div class="icon">⌂</div><strong>Premium<br>2 BHK Flats</strong></div>
-      <div class="feature"><div class="icon">◈</div><strong>100%<br>Vaastu</strong></div>
-      <div class="feature"><div class="icon">▤</div><strong>No<br>Common Walls</strong></div>
-      <div class="feature"><div class="icon">◯</div><strong>24 Hours<br>Water Supply</strong></div>
-      <div class="feature"><div class="icon">⌁</div><strong>CCTV Cameras<br>for Security</strong></div>
-      <div class="feature"><div class="icon">ϟ</div><strong>Power<br>Backup</strong></div>
-      <div class="feature"><div class="icon">❧</div><strong>Federal<br>Greenery</strong></div>
-      <div class="feature"><div class="icon">⇅</div><strong>6 Passenger<br>ISI Brand Lift</strong></div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container section-grid">
-      <div class="overview">
-        <div class="kicker">PROJECT OVERVIEW</div>
-        <h2 class="section-title">Modern Living<br>in a Prime Location</h2>
-        <p>RRR IKON offers spacious 2 BHK apartments with elegant design, modern amenities and excellent connectivity in Kavali, Nellore District.</p>
-        <div class="facts">
-          <div class="fact"><strong>📍 Location</strong><span>Kavali, Nellore District<br>Andhra Pradesh</span></div>
-          <div class="fact"><strong>▦ Configuration</strong><span>2 BHK Apartments</span></div>
-          <div class="fact"><strong>▣ Flat Sizes</strong><span>1360 SFT / 1350 SFT</span></div>
-        </div>
-        <a class="whatsapp" href="https://wa.me/919999999999" target="_blank" rel="noopener">◉ &nbsp; Enquire Now on WhatsApp →</a>
+    <section class="amenities" id="values">
+      <div class="amenity-grid container">
+        <div class="amenity"><span>⌂</span><b>Premium</b><small>2 BHK Flats</small></div>
+        <div class="amenity"><span>◈</span><b>100%</b><small>Vaastu</small></div>
+        <div class="amenity"><span>▤</span><b>No</b><small>Common Walls</small></div>
+        <div class="amenity"><span>◯</span><b>24 Hours</b><small>Water Supply</small></div>
+        <div class="amenity"><span>⌁</span><b>CCTV Cameras</b><small>for Security</small></div>
+        <div class="amenity"><span>ϟ</span><b>Power</b><small>Backup</small></div>
+        <div class="amenity"><span>❧</span><b>Federal</b><small>Greenery</small></div>
+        <div class="amenity"><span>⇅</span><b>6 Passenger</b><small>ISI Brand Lift</small></div>
+        <div class="amenity"><span>⚡</span><b>EV Charging</b><small>at Parking</small></div>
       </div>
+    </section>
 
-      <div class="floor">
-        <div class="kicker">FLOOR PLAN</div>
-        <img src="assets/floor-plan.jpg" alt="RRR IKON floor plan" />
-        <div class="area">
-          <h4>Area Statement</h4>
-          <table>
-            <tr><td><b>Flat No.</b></td><td><b>Area in SFT</b></td></tr>
-            <tr><td>1</td><td>1360</td></tr>
-            <tr><td>2</td><td>1350</td></tr>
-          </table>
+    <section class="project-section" id="project">
+      <div class="container project-grid">
+        <div class="project-copy" id="about">
+          <p class="section-kicker">PROJECT OVERVIEW</p>
+          <h2>Modern Living<br><em>in a Prime Location</em></h2>
+          <p>RRR IKON offers spacious 2 BHK apartments with elegant design, modern amenities and excellent connectivity in Kavali, Nellore District.</p>
+          <div class="facts">
+            <div><span>⌖</span><strong>Location</strong><small>Kavali, Nellore District<br>Andhra Pradesh</small></div>
+            <div><span>▦</span><strong>Configuration</strong><small>2 BHK<br>Apartments</small></div>
+            <div><span>▣</span><strong>Flat Sizes</strong><small>1360 SFT /<br>1350 SFT</small></div>
+          </div>
+          <a class="btn btn-green" href="#contact">◉ &nbsp; Enquire Now <b>→</b></a>
         </div>
-        <div class="highlights">
-          <h4>Key Highlights</h4>
-          <div>Spacious 2 BHK Flats</div>
-          <div>Modern Elevation Design</div>
-          <div>Premium Quality Construction</div>
-          <div>Excellent Ventilation</div>
-          <div>Convenient Market Center</div>
-          <div>Clear Title & Parking Tiles</div>
+
+        <div class="floor-card">
+          <p class="section-kicker">FLOOR PLAN</p>
+          <div class="floor-visual">
+            <div class="room balcony">BALCONY<br>11'0&quot; × 4'0&quot;</div>
+            <div class="room kitchen">KITCHEN<br>11'0&quot; × 10'0&quot;</div>
+            <div class="room utility">UTILITY<br>8'0&quot; × 3'0&quot;</div>
+            <div class="room bedroom">BEDROOM<br>11'0&quot; × 10'0&quot;</div>
+            <div class="room living">FAMILY LIVING<br>15'0&quot; × 11'0&quot;</div>
+            <div class="room dining">DINING<br>10'0&quot; × 10'0&quot;</div>
+            <div class="room toilet">TOILET<br>7'0&quot; × 4'0&quot;</div>
+            <div class="room master">M. BEDROOM<br>15'0&quot; × 10'0&quot;</div>
+            <div class="room master-bath">TOILET<br>7'0&quot; × 4'0&quot;</div>
+            <div class="room entrance">ENTRY</div>
+          </div>
+          <a class="brochure-link" href="assets/rrr-ikon-brochure.pdf" target="_blank" rel="noopener">View full brochure →</a>
+        </div>
+
+        <div class="project-details">
+          <div class="area-box">
+            <h3>Area Statement</h3>
+            <table>
+              <thead><tr><th>Flat No.</th><th>Area in SFT</th></tr></thead>
+              <tbody><tr><td>1</td><td>1360</td></tr><tr><td>2</td><td>1350</td></tr></tbody>
+            </table>
+          </div>
+          <div class="highlights">
+            <h3>Key Highlights</h3>
+            <ul>
+              <li>Spacious 2 BHK Flats</li>
+              <li>Modern Elevation Design</li>
+              <li>Premium Quality Construction</li>
+              <li>Excellent Ventilation</li>
+              <li>Convenient Market Center</li>
+              <li>Clear Title & Parking</li>
+            </ul>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div id="gallery">
-        <div class="gallery-head">
-          <div class="kicker">PROJECT GALLERY</div>
-          <a class="view-all" href="#gallery">View All →</a>
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div><p class="section-kicker">PROJECT GALLERY</p><h2>See RRR IKON</h2></div>
+          <a href="assets/rrr-ikon-brochure.pdf" target="_blank" rel="noopener">View Brochure <span>→</span></a>
         </div>
         <div class="gallery-grid">
-          <img class="big" src="assets/gallery-1.jpg" alt="RRR IKON exterior" />
-          <img src="assets/gallery-2.jpg" alt="RRR IKON exterior evening" />
-          <img src="assets/gallery-3.jpg" alt="RRR IKON exterior" />
-          <img src="assets/gallery-4.jpg" alt="RRR IKON building" />
-          <img src="assets/gallery-5.jpg" alt="RRR IKON interior" />
+          <button class="gallery-item gallery-large" data-image="assets/rrr-ikon-elevation-01.jpeg" aria-label="Open RRR IKON image">
+            <img src="assets/rrr-ikon-elevation-01.jpeg" alt="RRR IKON front elevation">
+          </button>
+          <button class="gallery-item" data-image="assets/rrr-ikon-elevation-02.jpeg" aria-label="Open RRR IKON image">
+            <img src="assets/rrr-ikon-elevation-02.jpeg" alt="RRR IKON elevation view">
+          </button>
+          <button class="gallery-item" data-image="assets/rrr-ikon-elevation-03.jpeg" aria-label="Open RRR IKON image">
+            <img src="assets/rrr-ikon-elevation-03.jpeg" alt="RRR IKON building view">
+          </button>
+          <button class="gallery-item" data-image="assets/rrr-ikon-night.jpeg" aria-label="Open RRR IKON night image">
+            <img src="assets/rrr-ikon-night.jpeg" alt="RRR IKON evening elevation">
+          </button>
+          <a class="brochure-tile" href="assets/rrr-ikon-brochure.pdf" target="_blank" rel="noopener">
+            <span>RRR IKON</span><strong>Explore the<br>complete brochure</strong><b>Open PDF →</b>
+          </a>
         </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
-<footer id="contact">
-  <div class="container footer-row">
-    <div class="brand">
-      <div class="brand-mark">AH</div>
-      <div class="brand-title">AMBATI <small>HOMES</small><span>BUILDING SPACES FOR BETTER LIVING</span></div>
+    <section class="values-section" id="about-values">
+      <div class="container">
+        <p class="section-kicker">OUR VALUES</p>
+        <h2>Built with purpose.<br><em>Designed for better living.</em></h2>
+        <div class="values-grid">
+          <article><span>01</span><h3>Trust</h3><p>Clear communication and a thoughtful approach to every home we build.</p></article>
+          <article><span>02</span><h3>Quality</h3><p>Premium materials, considered details and homes designed for everyday comfort.</p></article>
+          <article><span>03</span><h3>Living</h3><p>Spaces shaped around light, ventilation, privacy and the way families live.</p></article>
+          <article><span>04</span><h3>Tomorrow</h3><p>Responsible design with greenery, security and modern conveniences in mind.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <div>
+          <p class="section-kicker light">LET'S TALK</p>
+          <h2>Your next home<br><em>could start here.</em></h2>
+          <p>Interested in RRR IKON? Download the brochure or get in touch with Ambati Homes for project details and availability.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-gold" href="assets/rrr-ikon-brochure.pdf" target="_blank" rel="noopener">Download Brochure</a>
+          <a class="btn btn-light" href="mailto:info@ambatihomes.com">Email Ambati Homes</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <img src="assets/ambati-homes-logo.jpg" alt="Ambati Homes">
+      <p>BUILDING SPACES FOR BETTER LIVING</p>
+      <small>© 2026 Ambati Homes. All rights reserved.</small>
     </div>
-    <div class="copyright">© 2026 Ambati Homes & Developers Pvt Ltd. All rights reserved.</div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+    <img id="lightboxImage" src="" alt="">
   </div>
-</footer>
+
+  <script>
+    const menu=document.querySelector('.menu-toggle');
+    const nav=document.querySelector('.main-nav');
+    menu?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open)});
+    nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+    const lightbox=document.getElementById('lightbox');
+    const lbImage=document.getElementById('lightboxImage');
+    document.querySelectorAll('.gallery-item').forEach(item=>{
+      item.addEventListener('click',()=>{
+        lbImage.src=item.dataset.image;
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden','false');
+      });
+    });
+    const closeLightbox=()=>{lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');lbImage.src=''};
+    document.querySelector('.lightbox-close')?.addEventListener('click',closeLightbox);
+    lightbox?.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox()});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+
+    const sections=[...document.querySelectorAll('main section[id]')];
+    const links=[...document.querySelectorAll('.main-nav a')];
+    const observer=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          const id=entry.target.id;
+          links.forEach(link=>link.classList.toggle('active',link.getAttribute('href')==='#'+id));
+        }
+      });
+    },{rootMargin:'-35% 0px -55% 0px'});
+    sections.forEach(section=>observer.observe(section));
+  </script>
 </body>
 </html>
