@@ -84,7 +84,7 @@ img{display:block;max-width:100%}
 .facts strong{font-size:10px;color:#26382f}
 .facts small{font-size:9px;color:#69736d;line-height:1.25}
 .floor-card{border-left:1px solid var(--line);padding:2px 18px 0 22px}
-.floor-image-wrap{height:292px;border:1px solid #d9cfbd;border-radius:7px;background:linear-gradient(145deg,#fffdf8,#f3eee3);overflow:hidden;box-shadow:0 8px 20px rgba(70,55,28,.10);margin-top:9px;padding:7px}
+.floor-image-wrap{height:302px;border:1px solid #d9cfbd;border-radius:7px;background:linear-gradient(145deg,#fffdf8,#f3eee3);overflow:hidden;box-shadow:0 8px 20px rgba(70,55,28,.10);margin-top:9px;padding:8px;display:flex;align-items:center;justify-content:center}
 .floor-image{width:100%;height:100%;object-fit:contain;object-position:center;filter:drop-shadow(0 4px 7px rgba(70,55,28,.10))}
 .project-details{border-left:1px solid var(--line);padding:2px 18px 0}
 .mini-gallery{border-left:1px solid var(--line);padding:2px 0 0 18px;margin-top:0}
@@ -96,8 +96,8 @@ img{display:block;max-width:100%}
 .mini-gallery .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
 .mini-gallery .gallery-item:hover img{transform:scale(1.04)}
 .floor-layout{display:grid;grid-template-columns:44% 56%;gap:20px;align-items:start}
-.floor-image-wrap{height:302px;border:1px solid #ddd2bf;border-radius:4px;background:#f7f3e9;overflow:hidden;box-shadow:0 6px 16px rgba(70,55,28,.08)}
-.floor-image{width:100%;height:100%;object-fit:cover;object-position:80% 100%;transform:scale(1.01)}
+.floor-image-wrap{height:302px;border:1px solid #d9cfbd;border-radius:7px;background:linear-gradient(145deg,#fffdf8,#f3eee3);overflow:hidden;box-shadow:0 8px 20px rgba(70,55,28,.10);margin-top:9px;padding:8px;display:flex;align-items:center;justify-content:center}
+.floor-image{width:100%;height:100%;object-fit:contain;object-position:center;transform:none;filter:drop-shadow(0 4px 7px rgba(70,55,28,.10))}
 .floor-visual{height:300px;border:1px solid #b9b2a2;background:#f8f5ec;display:grid;grid-template-columns:1fr 1fr 1.08fr;grid-template-rows:45px 1fr 1fr;position:relative;overflow:hidden}.room{border:1px solid #b9b2a2;display:flex;align-items:center;justify-content:center;text-align:center;font-size:8px;line-height:1.2;color:#3b453f;background:#fbfaf4}.balcony{grid-column:1/4;background:#e8eee2}.kitchen{grid-column:1;grid-row:2}.utility{grid-column:1;grid-row:2;align-self:start;height:42%;font-size:7px}.bedroom{grid-column:2;grid-row:2}.living{grid-column:3;grid-row:2/4;background:#f2ead7}.dining{grid-column:1;grid-row:3}.toilet{grid-column:1;grid-row:3;align-self:end;height:43%}.master{grid-column:2;grid-row:3}.master-bath{grid-column:2;grid-row:3;align-self:end;width:46%;height:45%;justify-self:end}.entrance{position:absolute;bottom:4px;right:4px;border:0;background:#eee5d2;padding:4px 7px}.project-right{padding-left:18px}
 .area-box{border:1px solid #e1d8c8;background:#fff}
 .area-box h3,.highlights h3{font-size:13px;margin:0;padding:9px 11px;color:var(--green)}
