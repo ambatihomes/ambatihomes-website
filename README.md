@@ -1,16 +1,17 @@
-# Ambati Homes Website Design Package
+# Ambati Homes — Final Static Site Source
 
-This package contains:
-- `index.html` — static website starter
-- `styles.css` — responsive styling
-- `assets/homepage-design-reference.png` — approved visual design reference
+This is a clean static GitHub Pages site for Ambati Homes & Developers Pvt Ltd.
 
-Brand direction:
-- Forest Green: #0F3D2E
-- Premium Gold: #D4A857
-- Warm Neutral: #EDE8D9
+## What changed
+- No screenshots/mockups are used as website content.
+- The homepage uses the supplied RRR IKON elevation as the hero image.
+- The project gallery uses separate RRR IKON elevation images.
+- The supplied Ambati Homes brand presentation is used to create the logo asset.
+- RRR IKON brochure is linked as a separate PDF asset.
+- Responsive layout for desktop/mobile.
 
-Important:
-The reference image is included as a visual design reference. Replace the placeholder brand mark and reference-image placements with the original high-resolution Ambati Homes logo and the individual RRR IKON elevation/gallery assets before final production.
+## Upload to GitHub Pages
+Upload the contents of this folder to the repository root so `index.html` is at the root. Keep the `assets` folder alongside it.
 
-For GitHub Pages, upload the extracted files (not the ZIP itself) to the repository root, with `index.html` at the root.
+## Important
+The logo image is cropped from the brand presentation supplied in this project. If you later have the original transparent/high-resolution logo file, replace `assets/ambati-homes-logo.jpg` without changing the HTML.
