@@ -154,7 +154,7 @@ footer{background:var(--green-deep);color:#d8d4ca;text-align:center;padding:32px
 .lightbox-close{position:absolute;right:25px;top:18px;background:none;border:0;color:white;font-size:44px;cursor:pointer}
 
 @media(max-width:1200px){
-  .logo-wrap{width:275px}.main-nav{gap:23px}.hero h1{font-size:78px}.hero-copy{padding-left:5%}
+  .logo-wrap{width:320px}.main-nav{gap:20px}.hero h1{font-size:78px}.hero-copy{padding-left:5%}
   .project-grid{grid-template-columns:29% 27% 19% 25%}.mini-gallery{padding-left:14px}.floor-card{padding-left:18px}.project-details{padding-left:14px;padding-right:14px}
   .mini-gallery-grid{grid-template-rows:105px 105px}
 }
