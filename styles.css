@@ -726,3 +726,33 @@ footer{
     font-size:31px;
   }
 }
+
+
+/* RRR IKON project card polish */
+.project-card{
+  box-shadow:0 16px 36px rgba(8,51,38,.10);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.project-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 20px 42px rgba(8,51,38,.15);
+}
+.project-card-image img{transition:transform .55s ease}
+.project-card:hover .project-card-image img{transform:scale(1.035)}
+.project-card-location{display:flex;align-items:flex-start;gap:6px}
+.project-card-arrow{transition:background .2s ease,color .2s ease,transform .2s ease}
+.project-card:hover .project-card-arrow{background:rgba(217,189,124,.12);transform:translateX(3px)}
+@media(max-width:640px){
+  .project-card{border-radius:10px;box-shadow:0 12px 28px rgba(8,51,38,.10)}
+  .project-card-image{height:230px!important;min-height:230px!important}
+  .project-card-info{min-height:190px;padding:25px 22px 21px}
+  .project-card-kicker{font-size:10px;letter-spacing:2.5px}
+  .project-card-info h3{font-size:42px;margin-bottom:8px}
+  .project-card-location{font-size:11px;margin-bottom:15px}
+  .project-card-desc{font-size:12px;line-height:1.55}
+  .project-card-arrow{width:42px;height:42px;font-size:21px}
+}
+@media(max-width:430px){
+  .project-card-image{height:215px!important;min-height:215px!important}
+  .project-card-info{min-height:188px;padding:23px 20px 19px}
+}
