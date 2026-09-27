@@ -450,3 +450,119 @@ footer:after{right:-150px;bottom:-130px}
   .footer-social a{width:48px;height:48px;font-size:19px}
   .footer-social svg{width:21px;height:21px}
 }
+
+
+/* Premium reference footer + contact details */
+footer{
+  background:var(--green-deep);
+  padding:78px 20px 34px;
+}
+.footer-inner{
+  max-width:1200px;
+}
+.footer-inner img{
+  width:520px;
+  max-width:92%;
+  margin:0 auto 24px;
+}
+.footer-tagline{
+  font-size:18px;
+  letter-spacing:8px;
+  margin-bottom:20px;
+}
+.footer-description{
+  max-width:760px;
+  font-size:16px;
+  line-height:1.65;
+  margin-bottom:22px!important;
+}
+.footer-contact{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px 18px;
+  margin:0 auto 28px;
+  font-size:14px;
+  letter-spacing:.2px;
+}
+.footer-contact a{
+  color:#e4ddd0;
+  text-decoration:none;
+  transition:color .2s;
+}
+.footer-contact a:hover{color:#d9bd7c}
+.footer-contact-separator{color:rgba(217,189,124,.7)}
+.footer-nav{
+  margin-bottom:30px;
+}
+.footer-nav a{
+  font-size:17px;
+  padding:0 28px;
+}
+.footer-social{
+  gap:28px;
+  margin:4px auto 38px;
+}
+.footer-social a{
+  width:54px;
+  height:54px;
+  border-width:2px;
+}
+.footer-divider{
+  max-width:1090px;
+  margin-bottom:28px;
+}
+.footer-inner small{
+  font-size:14px;
+  color:#d0d5d1;
+}
+
+@media(max-width:640px){
+  footer{padding:48px 18px 30px}
+  .footer-inner img{
+    width:330px;
+    max-width:96%;
+    margin-bottom:18px;
+  }
+  .footer-tagline{
+    font-size:11px;
+    letter-spacing:4px;
+    margin-bottom:14px;
+  }
+  .footer-description{
+    font-size:12px;
+    line-height:1.55;
+    margin-bottom:20px!important;
+    max-width:340px;
+  }
+  .footer-contact{
+    flex-direction:column;
+    gap:7px;
+    margin-bottom:24px;
+    font-size:11px;
+    line-height:1.4;
+  }
+  .footer-contact-separator{display:none}
+  .footer-nav{
+    margin-bottom:24px;
+  }
+  .footer-nav a{
+    font-size:13px;
+  }
+  .footer-social{
+    gap:14px;
+    margin:6px auto 28px;
+  }
+  .footer-social a{
+    width:48px;
+    height:48px;
+  }
+  .footer-divider{
+    margin-bottom:20px;
+  }
+  .footer-inner small{
+    font-size:11px;
+    line-height:1.5;
+  }
+}
