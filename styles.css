@@ -392,7 +392,21 @@ footer{background:var(--green-deep);color:#d8d4ca;text-align:center;padding:32px
     min-height:0;
   }
   .brand-stats-grid>div{
-    min-height:94px;
-    padding:6px 3px;
+    min-height:82px;
+    padding:5px 3px;
+  }
+}
+
+/* Mobile spacing refinement */
+@media(max-width:640px){
+  .projects-showcase{
+    padding-top:38px;
+    padding-bottom:48px;
+  }
+}
+@media(max-width:430px){
+  .projects-showcase{
+    padding-top:32px;
+    padding-bottom:44px;
   }
 }
