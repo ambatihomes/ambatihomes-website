@@ -756,3 +756,82 @@ footer{
   .project-card-image{height:215px!important;min-height:215px!important}
   .project-card-info{min-height:188px;padding:23px 20px 19px}
 }
+
+
+/* Project overview / floor plan polish */
+.floor-image-wrap{
+  transition:box-shadow .25s ease,transform .25s ease;
+}
+.floor-image-wrap:hover{
+  box-shadow:0 12px 28px rgba(70,55,28,.14);
+  transform:translateY(-2px);
+}
+.brochure-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  width:100%;
+  min-height:36px;
+  border:1px solid rgba(185,133,44,.45);
+  border-radius:6px;
+  background:rgba(185,133,44,.06);
+  transition:background .2s ease,color .2s ease,border-color .2s ease;
+}
+.brochure-link:hover{
+  background:var(--green);
+  color:#fff;
+  border-color:var(--green);
+}
+.facts>div{
+  border-radius:7px;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.facts>div:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(48,57,48,.08);
+}
+@media(max-width:980px){
+  .floor-image-wrap{
+    height:360px;
+    padding:10px;
+  }
+}
+@media(max-width:640px){
+  .project-section{
+    padding-top:50px;
+    padding-bottom:52px;
+  }
+  .floor-card{
+    padding-top:22px;
+  }
+  .floor-image-wrap{
+    height:330px;
+    margin-top:10px;
+    padding:9px;
+    border-radius:8px;
+  }
+  .floor-image{
+    object-fit:contain;
+  }
+  .brochure-link{
+    min-height:40px;
+    margin-top:10px;
+    font-size:11px;
+  }
+  .facts{
+    gap:8px;
+  }
+  .facts>div{
+    padding:13px 12px;
+    min-height:92px;
+  }
+}
+@media(max-width:430px){
+  .floor-image-wrap{
+    height:300px;
+  }
+  .facts>div{
+    min-height:88px;
+  }
+}
