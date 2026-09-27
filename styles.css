@@ -621,3 +621,37 @@ footer{
     overflow-wrap:anywhere!important;
   }
 }
+
+
+/* Contact detail icons + mobile header polish */
+.contact-details a{
+  display:flex!important;
+  align-items:center;
+  gap:10px;
+}
+.contact-icon{
+  width:28px;
+  height:28px;
+  border:1px solid rgba(217,189,124,.65);
+  border-radius:50%;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:none;
+  color:#d9bd7c;
+  font-size:13px;
+}
+.wa-contact-icon{font-size:11px}
+@media(max-width:640px){
+  .site-header{height:72px}
+  .nav{width:92%;gap:14px}
+  .logo-wrap{width:180px;height:68px}
+  .menu-toggle{width:42px;height:42px;padding:0;display:flex;align-items:center;justify-content:center;font-size:26px;line-height:1}
+  .contact-details a{gap:9px}
+  .contact-icon{width:26px;height:26px;font-size:12px}
+}
+@media(max-width:430px){
+  .nav{width:91%;gap:10px}
+  .logo-wrap{width:175px}
+  .menu-toggle{width:40px;height:40px;font-size:25px}
+}
