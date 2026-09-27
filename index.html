@@ -107,7 +107,18 @@
 
 <section class="contact-section" id="contact"><div class="container contact-inner"><div><p class="section-kicker light">LET'S TALK</p><h2>Your next home<br><em>could start here.</em></h2><p>Interested in RRR IKON? Download the brochure or get in touch with Ambati Homes for project details and availability.</p></div><div class="contact-actions"><a class="btn btn-gold" href="assets/rrr-ikon-brochure.pdf" target="_blank" rel="noopener">Download Brochure</a><a class="btn btn-light" href="mailto:info@ambatihomes.com">Email Ambati Homes</a></div></div></section>
 </main>
-<footer><div class="container footer-inner"><img src="assets/ambati-homes-logo.jpg" alt="Ambati Homes"><p>BUILDING SPACES FOR BETTER LIVING</p><small>© 2026 Ambati Homes. All rights reserved.</small></div></footer>
+<footer>
+  <div class="container footer-inner">
+    <img src="assets/ambati-homes-logo.jpg" alt="Ambati Homes">
+    <p class="footer-tagline">BUILDING SPACES FOR BETTER LIVING</p>
+    <p class="footer-description">Thoughtfully designed homes and communities that bring comfort, value and a brighter tomorrow.</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#projects">Our Projects</a><a href="#gallery">Gallery</a><a href="#contact">Contact Us</a>
+    </nav>
+    <div class="footer-divider" aria-hidden="true"><span>◆</span></div>
+    <small>© 2026 Ambati Homes and Developers Pvt Ltd. All rights reserved.</small>
+  </div>
+</footer>
 <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img id="lightboxImage" src="" alt=""></div>
 <script>
 const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('.main-nav');menu?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open)});nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
