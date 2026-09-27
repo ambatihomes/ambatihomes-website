@@ -438,3 +438,9 @@ footer:after{right:-150px;bottom:-130px}
 @media(min-width:641px) and (max-width:980px){
   footer{padding-top:54px}
 }
+
+/* Footer logo refinement: remove the light rectangle visually while keeping the original logo asset */
+.footer-inner img{
+  mix-blend-mode:screen;
+  filter:invert(1) sepia(1) saturate(1.8) hue-rotate(350deg) brightness(1.05) contrast(.98);
+}
