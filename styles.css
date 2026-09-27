@@ -566,3 +566,21 @@ footer{
     line-height:1.5;
   }
 }
+
+/* Contact details */
+.contact-details{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-top:20px;
+}
+.contact-details a{
+  color:#e8e2d7;
+  font-size:15px;
+  text-decoration:none;
+}
+.contact-details a:hover{color:#d9bd7c}
+@media(max-width:640px){
+  .contact-details{gap:7px;margin-top:18px}
+  .contact-details a{font-size:12px}
+}
