@@ -225,3 +225,10 @@ footer{background:var(--green-deep);color:#d8d4ca;text-align:center;padding:32px
 .project-card-info h3{font-size:43px}
 .project-card-arrow{width:40px;height:40px;font-size:21px;margin-top:14px}
 @media(max-width:640px){.project-card{width:100%;max-width:none}.project-card-image{height:220px;min-height:220px}.project-card-info{min-height:185px}}
+
+/* Homepage uses the exact AmbatiHome-Page hero artwork */
+.brand-hero{display:block;min-height:0;background:var(--cream);overflow:hidden}
+.brand-hero-copy{display:none}
+.brand-hero-image{width:100%;min-height:0;position:relative;overflow:hidden}
+.brand-hero-image img{width:100%;height:auto;display:block;object-fit:contain;object-position:center;transform:none}
+.brand-hero-image:before{display:none}
