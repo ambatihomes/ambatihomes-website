@@ -311,3 +311,20 @@ footer{background:var(--green-deep);color:#d8d4ca;text-align:center;padding:32px
   .brand-stats-grid strong{font-size:9px}
   .brand-stats-grid small{font-size:8px}
 }
+
+/* Mobile hero: preserve the complete artwork without horizontal cropping */
+@media(max-width:640px){
+  .brand-hero-image{
+    height:auto;
+    min-height:0;
+    overflow:hidden;
+    background:var(--cream);
+  }
+  .brand-hero-image img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:contain;
+    object-position:center;
+  }
+}
