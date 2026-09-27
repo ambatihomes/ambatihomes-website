@@ -232,3 +232,24 @@ footer{background:var(--green-deep);color:#d8d4ca;text-align:center;padding:32px
 .brand-hero-image{width:100%;min-height:0;position:relative;overflow:hidden}
 .brand-hero-image img{width:100%;height:auto;display:block;object-fit:contain;object-position:center;transform:none}
 .brand-hero-image:before{display:none}
+
+/* Mobile homepage tuning: keep the hero artwork prominent and make the green stats compact */
+@media(max-width:640px){
+  .brand-hero-image{width:100%;overflow:hidden}
+  .brand-hero-image img{width:100%;height:auto;display:block}
+  .brand-stats-grid{grid-template-columns:1fr}
+  .brand-stats-grid>div{
+    min-height:72px;
+    grid-template-columns:62px 1fr;
+    column-gap:12px;
+    align-content:center;
+    padding:10px 20px;
+  }
+  .brand-stats-grid span{font-size:22px}
+  .brand-stats-grid strong{font-size:12px;line-height:1.2}
+  .brand-stats-grid small{font-size:10px;line-height:1.2}
+}
+@media(max-width:430px){
+  .brand-stats-grid>div{min-height:68px;padding:9px 18px;grid-template-columns:58px 1fr}
+  .brand-stats-grid span{font-size:21px}
+}
