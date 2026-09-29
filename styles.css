@@ -836,3 +836,35 @@ footer{
     min-height:88px;
   }
 }
+
+
+/* Footer logo crop: reveal the full-size brand mark from the transparent source artwork */
+.footer-logo-crop{
+  width:min(520px,92%);
+  height:118px;
+  margin:0 auto 24px;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.footer-logo-crop img{
+  width:520px;
+  max-width:none;
+  height:auto;
+  margin:0;
+  transform:scale(3);
+  transform-origin:center center;
+}
+@media(max-width:640px){
+  .footer-logo-crop{
+    width:min(330px,96%);
+    height:82px;
+    margin-bottom:18px;
+  }
+  .footer-logo-crop img{
+    width:330px;
+    max-width:none;
+    transform:scale(3);
+  }
+}
