@@ -462,6 +462,7 @@ footer{
 }
 .footer-inner img{
   width:520px;
+  filter:brightness(0) saturate(100%) invert(79%) sepia(34%) saturate(620%) hue-rotate(357deg) brightness(93%) contrast(89%);
   max-width:92%;
   margin:0 auto 24px;
 }
